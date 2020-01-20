@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+img {
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landing {
+  /*position: relative;
+  background: url("./img/tree.jpg") no-repeat;
+  background-size: cover;
+  background-position: inherit;*/
+  height: 100vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.default-transp-bg {
+  position: relative;
+  background: url("./img/tree-white.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /*height: 100vh;*/
+  min-height: 88vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.white-bg {
+  background-color: #ffffffbf;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  background-color: #ffffffbf;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing-inner {
+  padding-top: 80px;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+.spinner {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
